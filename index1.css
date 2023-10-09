@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+        background-image: url("/bip1.jpg");
+        background-size:cover;
+        
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed;
+}
+   .main h1{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 40px;
+        color: rgb(0,0,0);
+        padding-top: 30px;
+        
+    }
+    .main a{
+        text-decoration: none;
+
+    }
+    .footer{
+        background-color:  rgb(0,0,0);
+        color: aliceblue;
+        margin-top:50px;
+        height:120px;
+        text-align: center;
+        padding:40px;
+    }
+   .enter button{
+        background-color:  rgb(0,0,0);
+        color:white;
+        height: 42px;
+        width:100px;
+   }
+   .enter{
+    margin-top: 400px;
+    margin-left:700px;
+   }
+   .nav1 a{
+    text-decoration:none;
+    font-size:20px;
+    padding-left: 50px;
+    margin-right: 140px;
+   }
+   .nav1{
+    background-color: rgb(0,0,0);
+    height:55px;
+    padding-top:25px;
+   }

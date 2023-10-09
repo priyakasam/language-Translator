@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Language to Unicode Converter</title>
+   <link rel="stylesheet" href="secondpage.css">
+  
+</head>
+<body>
+  <div class="nav2">
+   
+    
+     <a class="home"  href="/index1.html" style="color: aliceblue;">Home</a>
+     <a  class="Language" href="/firstpage.html" id="Language" style="color:aliceblue;">Language</a>
+      <a  class="Unicode" href="/secondpage.html" id="Unicode" style="color:aliceblue;">Unicode</a>
+      
+      <a class="Contact Us" href="/contact.html" id="Contact Us" style="color:aliceblue;">Contact</a>
+    
+   
+    
+  </div>
+  <div class="container">
+    <h2>Language to Unicode Converter</h2>
+    <label for="inputText">Input Text:</label>
+    <br>
+    <br>
+    <textarea id="inputText" rows="4" cols="50"></textarea>
+    <br>
+    <br>
+    <button onclick="convertText()" >Convert</button>
+    <br>
+    <br>
+    <label for="outputText">Unicode Representation (UTF-16):</label>
+    <br>
+    <br>
+    <textarea id="outputText" rows="6" cols="50" readonly></textarea>
+  </div>
+
+  <script>
+    function convertText() {
+      // Get the input text from the textarea
+      var inputText = document.getElementById("inputText").value;
+
+      // Convert the input text to Unicode (UTF-16) representation
+      var unicodeText = "";
+
+      for (var i = 0; i < inputText.length; i++) {
+        var charCode = inputText.charCodeAt(i);
+        unicodeText += "\\u" + charCode.toString(16).padStart(4, "0");
+      }
+
+      // Display the result in the output textarea
+      document.getElementById("outputText").value = unicodeText;
+    }
+  </script>
+</body>
+</html>
+

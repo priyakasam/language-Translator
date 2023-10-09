@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image: url("/bip1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+   
+}
+.nav2 a{
+text-decoration: none;
+
+font-size:30px;
+padding-left: 50px;
+margin-right: 100px;
+
+}
+.nav2{
+background-color: black;
+height: 60px;
+padding-top: 10px;
+
+}
+.contact-content {
+margin-left: 10px;
+}
